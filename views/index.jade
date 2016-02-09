@@ -7,23 +7,35 @@ block content
     // Wrapper 
     #wrapper
 
-        // ADD VALUE TO CHART 
-        h2 Add Value to Chart 
-        
-        #addChartValue
-            br
-            br
-            br
-            fieldset 
-                input#inputChartYAxis(type='text', placeholder='ingredient')
-                button#btnAddChartValue Add Chart Value
+        div.container
+            div.row
+                div.col-md-3
+                    // ADD VALUE TO CHART 
+                    h2 Add Value to Chart 
+                    
+                    #addChartValue
+                        br
+                        br
+                        br
+                        fieldset 
+                            input#inputChartYAxis(type='text', placeholder='ingredient')
+                            button#btnAddChartValue Add Chart Value
 
-        // D3 CHART 
-        br
-        #chart
-        #chartProtein
-        #chartFat
-        #chartCarbs
+                div.col-md-9
+                    // D3 CHART 
+                    br
+                    div.container
+                        div.row
+                            div.col-md-6
+                                #chart
+                            div.col-md-6
+                                #chartProtein
+                        div.row
+                            div.col-md-6
+                                #chartFat
+                            div.col-md-6
+                                #chartCarbs
+
 
         // FOOD LIST
         br

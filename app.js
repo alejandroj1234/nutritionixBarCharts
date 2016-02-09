@@ -8,7 +8,8 @@ var bodyParser = require('body-parser');
 // Database
 var mongo = require('mongodb');
 var monk = require('monk');
-var db = monk('localhost:27017/nutritionixCalorieBarChart');
+//var db = monk('localhost:27017/nutritionixCalorieBarChart');
+var db = monk(process.env.MONGOLAB_URI || 'mongodb://user:password@localhost:27017/nutritionixCalorieBarChart');
 
 var routes = require('./routes/index');
 var nutritionix = require('./routes/nutritionix');
