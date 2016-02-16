@@ -2,10 +2,13 @@ body {
   padding: 30px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
+h1 {
+  text-align: left;
+}
 
-h2 {
-	position: fixed;
-	left: 35px	
+h4 {
+	position: relative;
+	
 }
 
 a {
@@ -13,7 +16,7 @@ a {
 }
 
 #wrapper {
-	padding-left:312px;
+	/*padding-left:312px;*/
 	position:relative;
 }
 

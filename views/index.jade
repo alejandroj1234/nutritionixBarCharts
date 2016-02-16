@@ -2,25 +2,24 @@ extends layout
 
 block content
     h1= title
-    p Welcome to our test
 
     // Wrapper 
     #wrapper
 
         div.container
             div.row
-                div.col-md-3
-                    // ADD VALUE TO CHART 
-                    h2 Add Value to Chart 
-                    
-                    #addChartValue
-                        br
-                        br
-                        br
-                        fieldset 
-                            input#inputChartYAxis(type='text', placeholder='ingredient')
-                            button#btnAddChartValue Add Chart Value
+            #addChartValue
+                h4 Add Value to Chart 
+                fieldset 
+                    input#inputChartYAxis(type='text', placeholder='ingredient')
+                    button#btnAddChartValue Add Chart Value
 
+            div.row
+                br
+                br
+                br
+                br
+                br
                 div.col-md-9
                     // D3 CHART 
                     br
@@ -36,19 +35,19 @@ block content
                             div.col-md-6
                                 #chartCarbs
 
-
-        // FOOD LIST
-        br
-        br
-        #foodList
-            table
-                thead
-                    th Food
-                    th Calories
-                    th Protein
-                    th Fat
-                    th Carbs
-                    th Delete?
-                tbody   
+                // FOOD LIST
+                div.col-md-9
+                    br
+                    br
+                    #foodList
+                        table
+                            thead
+                                th Food
+                                th Calories
+                                th Protein
+                                th Fat
+                                th Carbs
+                                th Delete?
+                            tbody   
 
         
